@@ -20,15 +20,29 @@ function runTimer(x) {
 // This Fuction requests the users name and and will keep asking for the 
 // users name until the answer they provided is less than 15 characters
 function getUserInput() {
+    userName = " "
+   
+    
 
     do{
         userFirstName = prompt("Input User First Name:  ");
         userLastName = prompt("Input User Last Name:  ");
 
-        user = username + " " + useranswer;
-        if (user.length > 15) {alert("Number of characters exceeds max limit")}
-    }while(user.length > 15)
+        userName = userFirstName + " " + userLastName;
 
-    alert("This is your Username:  " + user);
+        if (userName.length > 15) {alert("Number of characters exceeds max limit")}
+
+    }while(userName.length > 15);
+
+    badgeNum = 0 
+
+    
+
+    do{
+        badgeNum = prompt("Please enter your age:   ")
+
+    }while(badgeNum > 150);
+
+    alert("This is your Username and Badge Number:  " + userName + badgeNum);
 }
   
