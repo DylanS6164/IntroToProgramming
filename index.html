@@ -2,111 +2,59 @@
 <html>
     <head>
         <title>Project Start</title>
+       <!-- The below code links to a pre writtten java source page to simplify the additon of java script -->
+        <script src="code.js"></script>
     </head>
-    <body style="background-color:rgb(244, 65, 0);">
+
+    <!-- below text shouldn't be used for the purposes of an actual design class or in the field but works for the purposes of this assignment-->
+    <center>
+
+        <body style="background-color:rgb(93, 16, 216);">
         
-        <!-- Basics and Intro Material -->
-       <center> 
+        <!-- Base HTML Tags -->
+      
+         
         <h1>UAT Space Program</h1>
         <h2><img src="data:image/jpeg;base64,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"></h2>
-        <p>Wow now your first paragrph your on a roll!</p>
+        <!-- <br /> -->
+        <!-- <a href="URL here">link text here</a> -->
+        <p style="text-align: center;">Wow now your first paragrph your on a roll!</p>
+      
+        <!-- Button Alert Function -->
+       
         <button id="btnAlert"
         onclick="alert('this is an alert');">
     Click me</button>
-      
         <button>Start</button>
         <button>Stop</button>
     
-    <!-- Countdown Function-->
-    <p>
+    <!-- Countdown Placeholder-->
+    <p style="text-align: center;">
         Countdown: <span id="DisplayCountdown">Beginning Countdown.</span>
     </p>
-    
+</center>
    
-   <script>
-       //Behind the scenes of the countdown 
-        
-       currTime = 50;
-       var timeOut = 5000;
 
-       let x = document.getElementById("DisplayCountdown");
-        setTimeout(function(){
-            x.innerHTML = currTime;
-            currTime = currTime-5;
-        }, timeOut);
-        timeOut = timeOut + 5000;
-        
-         
-        setTimeout(function(){
-            x.innerHTML = currTime
-            currTime = currTime-5;
-        }, timeOut);
-        timeOut = timeOut + 5000;
-        
-         
-        setTimeout(function(){
-            x.innerHTML = currTime
-            currTime = currTime-5;
-        }, timeOut);
-        timeOut = timeOut + 5000;
-        
-         
-        setTimeout(function(){
-            x.innerHTML = currTime
-            currTime = currTime-5;
-        }, timeOut);
-        timeOut = timeOut + 5000;
-        
-         
-        setTimeout(function(){
-            x.innerHTML = currTime
-            currTime = currTime-5;
-        }, timeOut);
-        timeOut = timeOut + 5000;
-        
-         
-        setTimeout(function(){
-            x.innerHTML = currTime
-            currTime = currTime-5;
-        }, timeOut);
-        timeOut = timeOut + 5000;
-        
-         
-        setTimeout(function(){
-            x.innerHTML = currTime
-            currTime = currTime-5;
-        }, timeOut);
-        timeOut = timeOut + 5000;
-        
-         
-        setTimeout(function(){
-            x.innerHTML = currTime
-            currTime = currTime-5;
-        }, timeOut);
-        timeOut = timeOut + 5000;
-        
-        
-        setTimeout(function(){
-            x.innerHTML = currTime
-            currTime = currTime-5;
-        }, timeOut);
-        timeOut = timeOut + 5000;
-        
-        
-        setTimeout(function(){
-            x.innerHTML = currTime
-            currTime = currTime-5;
-        }, timeOut);
-        timeOut = timeOut + 5000;
+  <script>
+    
+    let x = document.getElementById("DisplayCountdown");
+   alert("test")
 
-        setTimeout(function(){
-            x.innerHTML = "Blast Off"
-        }, timeOut);
+ //loop for the timer function
+   
+    runTimer(x)
 
-        
+    alert("test")
+
+    getUserInput()
+
+ //loop for the counter function
+//countdown function   
+
     </script>
 
 
 
 </body>   
 </html>
+ 
