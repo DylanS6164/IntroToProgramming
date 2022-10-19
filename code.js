@@ -1,12 +1,34 @@
+var intervalIds = new Array();
+
+
+//This function enables and disables the start and stop button
+//when one or the other is clicked it also enables the timer once the 
+//start button is clicked
+function startButtonClick() {
+    document.getElementById("btnStart").disabled = true;
+    document.getElementById("btnStop").disabled = false;
+    runTimer(x)
+}
+function stopButtonClick() {
+    document.getElementById("btnStart").disabled = false;
+    document.getElementById("btnStop").disabled = true;
+    
+    for(counter=0; counter < 11; counter++){
+        clearTimeout(intervalIds[counter]);
+    }
+}
+
+
 //This function takes the countdown set up in the html page and changes the
-// the text 
+// the text at the end of the countdown
+
 
 function runTimer(x) {
     currTime = 50;
     var timeOut = 5000;
     for(counter=0; counter < 11; counter++){
         
-            setTimeout(function(){
+            intervalIds[counter] = setTimeout(function(){
                 if(currTime == 0){
                 x.innerHTML = "Blast Off"
             } else{
