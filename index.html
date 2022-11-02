@@ -29,10 +29,13 @@
         <button id="btnAlert"
         onclick="alert('this is an alert');">
     Click me</button>
-     <input type="button" id="btnStart" value="Start" onclick="startButtonClick();" />
+    <!--The below buttons are tied into the countdown function and are used to start-->
+    <!--the countdown when the start button is clicked then stop the timer once the stop-->
+    <!--button is pressed--> 
+    <input type="button" id="btnStart" value="Start" onclick="startButtonClick();" />
      <input type="button" id="btnStop" value="Stop" disabled="true" onclick="stopButtonClick();" />
     
-    <!-- Countdown Placeholder-->
+    <!-- Countdown Placeholder (gives the countdown text in order to function)-->
     <p style="text-align: center;">
         Countdown: <span id="DisplayCountdown">Beginning Countdown.</span>
     </p>
@@ -40,19 +43,11 @@
    
 
   <script>
-    
-   alert("test")
-
- //loop for the timer function
    
-   
+//The below function is used ot ask the user for their first and last name as well
+//Their badge number
 
-    alert("test")
-
-    getUserInput()
-
- //loop for the counter function
-//countdown function   
+    getUserInput() 
 
     </script>
 
